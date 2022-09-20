@@ -18,14 +18,14 @@ class Home extends React.Component {
         axios(
             {
                 method: 'GET',
-                url: 'http://localhost:3000/city/getcitylist',
+                url: 'https://final-product1.herokuapp.com/city/getcitylist',
                 headers: { 'Content-Type': 'application/json' }
             }
         ).then(response => this.setState({ location: response.data })).catch()
         axios(
             {
                 method: 'GET',
-                url: 'http://localhost:3000/meals/getAllmeals',
+                url: 'https://final-product1.herokuapp.com/meals/getAllmeals',
                 headers: { 'Content-Type': 'application/json' }
             }
         ).then(response => this.setState({ mealType: response.data })).catch()
